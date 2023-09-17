@@ -1,0 +1,502 @@
+[
+  [
+    "UseContainerItem [classic|retail]",
+    "\nDescription: Uses an item from a bag.",
+    "undefined--@arg i: bag Index/n--@arg z: slot/nfunction/nBANETO_UseContainerItem/n(/n,/n)/n"
+  ],
+  [
+    "GetSpellCooldown [classic|retail]",
+    "\nDescription: Get a spell's cooldown in seconds.",
+    "undefined--@arg spellid: number/n--@return: duration/nfunction/nBANETO_GetSpellCooldown/n(/n)/n"
+  ],
+  [
+    "DelayStateTick [classic|retail]",
+    "\nDescription: Delay the next state tick by seconds.",
+    "undefined--@arg seconds: number/nfunction/nBANETO_DelayStateTick/n(/n)/n"
+  ],
+  [
+    "PrintPlugin [classic|retail]",
+    "\nDescription: Print something to the chat frame denoting a plugin.",
+    "undefined--@arg message: string/nfunction/nBANETO_PrintPlugin/n(/n)/n"
+  ],
+  [
+    "GetSessionTime [classic|retail]",
+    "\nDescription: Returns the number of seconds the bot has been loaded.",
+    "undefined--@return: number/nfunction/nBANETO_GetSessionTime/n(/n)/n"
+  ],
+  [
+    "reloadUi [classic|retail]",
+    "\nDescription: Reload the UI.",
+    "undefinedfunction/nreloadUi/n(/n)/n"
+  ],
+  [
+    "LoadOfficialPaid [classic|retail]",
+    "\nDescription: Load an official (paid) profile",
+    "undefined--@arg packName: string/n--@arg profile: string/nfunction/nBANETO_LoadOfficialPaid/n(/n,/n)/n"
+  ],
+  [
+    "GetPlayerCorpsePosition [classic|retail]",
+    "\nDescription: Get the player's corpse position",
+    "undefined--@return: x number the x coordinate of the player's corpse/nfunction/nBANETO_GetPlayerCorpsePosition/n(/n)/n"
+  ],
+  [
+    "GetState [classic|retail]",
+    "\nDescription: Returns the state the bot is currently in.",
+    "undefined--@return: string/nfunction/nBANETO_GetState/n(/n)/n"
+  ],
+  [
+    "IsFlyingAscendNeeded [classic|retail]",
+    "\nDescription: Checks if ascending flight is required for the player's current position.",
+    "undefined--@return: boolean: Returns true if ascending flight is needed, false otherwise./nfunction/nBANETO_IsFlyingAscendNeeded/n(/n)/n"
+  ],
+  [
+    "GetZoneId [classic|retail]",
+    "\nDescription: Return the zone's ID.",
+    "undefined--@return: number/nfunction/nBANETO_GetZoneId/n(/n)/n"
+  ],
+  [
+    "GetMapId [classic|retail]",
+    "\nDescription: Return the map's ID.",
+    "undefined--@return: ID number the map ID/nfunction/nBANETO_GetMapId/n(/n)/n"
+  ],
+  [
+    "StopMovementWithoutDeletingPath [classic|retail]",
+    "\nDescription: Stop movement but keep the path available.",
+    "undefinedfunction/nBANETO_StopMovementWithoutDeletingPath/n(/n)/n"
+  ],
+  [
+    "SetBanetoTarget [classic|retail]",
+    "\nDescription: Set the BANETO_TARGET variable, anytime you change targets (@see UnlockedTargetUnit) you should call this function.",
+    "undefined--@arg unit: string/nfunction/nBANETO_SetBanetoTarget/n(/n)/n"
+  ],
+  [
+    "StopMovement [classic|retail]",
+    "\nDescription: Stop all movement and clear path.",
+    "undefinedfunction/nBANETO_StopMovement/n(/n)/n"
+  ],
+  [
+    "LoadCustomTravelProfile [classic|retail]",
+    "\nDescription: Load a custom travel profile",
+    "undefined--@arg profileName: string/nfunction/nBANETO_LoadCustomTravelProfile/n(/n)/n"
+  ],
+  [
+    "IsPackQuester [classic|retail]",
+    "\nDescription: Is the packName a Quest pack.",
+    "undefined--@arg packName: string/n--@return: boolean/nfunction/nBANETO_IsPackQuester/n(/n)/n"
+  ],
+  [
+    "GetFirstProfileOfPack [classic|retail]",
+    "\nDescription: Get the first profile of a given pack.",
+    "undefined--@arg packName: string/n--@return: string/nfunction/nBANETO_GetFirstProfileOfPack/n(/n)/n"
+  ],
+  [
+    "GetTarget [classic|retail]",
+    "\nDescription: Return the current baneto internal target, do not confuse it with your wow target.",
+    "undefined--@return: object/nfunction/nBANETO_GetTarget/n(/n)/n"
+  ],
+  [
+    "IsPaidPackInstalled [classic|retail]",
+    "\nDescription: Is a paid pack already installed?",
+    "undefined--@arg packName: string/n--@return: boolean/nfunction/nBANETO_IsPaidPackInstalled/n(/n)/n"
+  ],
+  [
+    "InstallPaidPack [classic|retail]",
+    "\nDescription: Install a paid pack",
+    "undefined--@arg packName: string/nfunction/nBANETO_InstallPaidPack/n(/n)/n"
+  ],
+  [
+    "LoadTravelProfile [classic|retail]",
+    "\nDescription: Load a predefined travel profile.",
+    "undefined--@arg name: string/nfunction/nBANETO_LoadTravelProfile/n(/n)/n"
+  ],
+  [
+    "GameObjectType [classic|retail]",
+    "\nDescription: Get a gameObject's type",
+    "undefined--@arg gameObject: GameObject/n--@return: number/nfunction/nBANETO_GameObjectType/n(/n)/n"
+  ],
+  [
+    "LoadBgProfile [classic|retail]",
+    "\nDescription: Load a battleground profile.",
+    "undefined--@arg name: string/nfunction/nBANETO_LoadBgProfile/n(/n)/n"
+  ],
+  [
+    "IsTrainStateRequired [classic|retail]",
+    "\nDescription: Check if the character should visit a class trainer.",
+    "undefined--@return: boolean/nfunction/nBANETO_IsTrainStateRequired/n(/n)/n"
+  ],
+  [
+    "IsProfTrainStateRequired [classic|retail]",
+    "\nDescription: Check if the character should visit a profession trainer.",
+    "undefined--@return: boolean/nfunction/nBANETO_IsProfTrainStateRequired/n(/n)/n"
+  ],
+  [
+    "AreWeDazed [classic|retail]",
+    "\nDescription: Check if the character is dazed.",
+    "undefined--@return: boolean/nfunction/nBANETO_AreWeDazed/n(/n)/n"
+  ],
+  [
+    "IsReviveSecure [classic|retail]",
+    "\nDescription: Check if it's safe to revive.",
+    "undefined--@return: boolean/nfunction/nBANETO_IsReviveSecure/n(/n)/n"
+  ],
+  [
+    "GetRandomPointOnCircleNEW [classic|retail]",
+    "\nDescription: Get a random point on a specified circle",
+    "undefined--@arg centerX: number/n--@arg centerY: number/n--@arg centerZ: number/n--@arg radius: number/n--@return: x number the x coordinate of the generated point/nfunction/nBANETO_GetRandomPointOnCircleNEW/n(/n,/n,/n,/n)/n"
+  ],
+  [
+    "GetRandomPointInCircleNEW [classic|retail]",
+    "\nDescription: Get a random point in a specified circle",
+    "undefined--@arg centerX: number/n--@arg centerY: number/n--@arg centerZ: number/n--@arg radius: number/n--@return: x number the x coordinate of the generated point/nfunction/nBANETO_GetRandomPointInCircleNEW/n(/n,/n,/n,/n)/n"
+  ],
+  [
+    "StartStop [classic|retail]",
+    "\nDescription: Toggle Baneto operation, starting or stopping as required.",
+    "undefinedfunction/nBANETO_StartStop/n(/n)/n"
+  ],
+  [
+    "GetCurrentCenterIndex [classic|retail]",
+    "\nDescription: Get the index of the currently active spot in the profile.",
+    "undefined--@return: number: The index of the current spot./nfunction/nBANETO_GetCurrentCenterIndex/n(/n)/n"
+  ],
+  [
+    "Start [classic|retail]",
+    "\nDescription: Start Baneto bot.",
+    "undefinedfunction/nBANETO_Start/n(/n)/n"
+  ],
+  [
+    "IsLastProfileATaskInTaskmanager [classic|retail]",
+    "\nDescription: Check if the last loaded profile was part of a task in the task manager.",
+    "undefined--@return: boolean: Returns true if the last profile was a task, false otherwise./nfunction/nBANETO_IsLastProfileATaskInTaskmanager/n(/n)/n"
+  ],
+  [
+    "StartTaskmanager [classic|retail]",
+    "\nDescription: Initiate task manager.",
+    "undefinedfunction/nBANETO_StartTaskmanager/n(/n)/n"
+  ],
+  [
+    "GetCurrentTaskmanagerProfile [classic|retail]",
+    "\nDescription: Get the name of the currently active task manager profile.",
+    "undefined--@return: string: The name of the current task manager profile./nfunction/nBANETO_GetCurrentTaskmanagerProfile/n(/n)/n"
+  ],
+  [
+    "RemoveTaskByIndex [classic|retail]",
+    "\nDescription: Remove a task from the task manager by its index.",
+    "undefined--@arg index: number: The index of the task to be removed./nfunction/nBANETO_RemoveTaskByIndex/n(/n)/n"
+  ],
+  [
+    "VisualizeTask [classic|retail]",
+    "\nDescription: Visualize a task for a specified duration.",
+    "undefined--@arg name: string: The name of the task to visualize./n--@arg duration: number: The duration for which to visualize the task (in seconds)./nfunction/nBANETO_VisualizeTask/n(/n,/n)/n"
+  ],
+  [
+    "AddTask [classic|retail]",
+    "\nDescription: Add a task to the task manager.",
+    "undefined--@arg taskType: string: The type of the task./n--@arg taskDuration: number: The duration of the task (in seconds)./n--@arg fileName: string: The name of the task file./n--@arg isLocal: boolean: If true, the task file is local. If false, it's remote./nfunction/nBANETO_AddTask/n(/n,/n,/n,/n)/n"
+  ],
+  [
+    "GetCenterIndexInFlyingPath [classic|retail]",
+    "\nDescription: Get the index of the center in the current flying path.",
+    "undefined--@arg path: table: The flying path as an array of coordinates./n--@return: number: The index of the center in the flying path./nfunction/nBANETO_GetCenterIndexInFlyingPath/n(/n)/n"
+  ],
+  [
+    "GetCenterIndexInPath [classic|retail]",
+    "\nDescription: Get the index of the center in the current path.",
+    "undefined--@arg path: table: The path as an array of coordinates./n--@return: number: The index of the center in the path./nfunction/nBANETO_GetCenterIndexInPath/n(/n)/n"
+  ],
+  [
+    "GetCenterIndexForPath [classic|retail]",
+    "\nDescription: Get the index of the center for the specified path type.",
+    "undefined--@arg type: string: The type of path./n--@return: number: The index of the center for the specified path./nfunction/nBANETO_GetCenterIndexForPath/n(/n)/n"
+  ],
+  [
+    "GetClosestPathIndex [classic|retail]",
+    "\nDescription: Get the closest index of the path to the player's current position.",
+    "undefined--@return: number: The closest index of the path./nfunction/nBANETO_GetClosestPathIndex/n(/n)/n"
+  ],
+  [
+    "GetCenterIndexForGrinder [classic|retail]",
+    "\nDescription: Get the index of the center for the current grinder.",
+    "undefined--@return: number: The index of the center for the grinder./nfunction/nBANETO_GetCenterIndexForGrinder/n(/n)/n"
+  ],
+  [
+    "FlyingPathDeleter [classic|retail]",
+    "\nDescription: Delete the current flying path.",
+    "undefinedfunction/nBANETO_FlyingPathDeleter/n(/n)/n"
+  ],
+  [
+    "GroundPathDeleter [classic|retail]",
+    "\nDescription: Delete the current ground path.",
+    "undefinedfunction/nBANETO_GroundPathDeleter/n(/n)/n"
+  ],
+  [
+    "TurnStop [classic|retail]",
+    "\nDescription: Stop turning.",
+    "undefinedfunction/nBANETO_TurnStop/n(/n)/n"
+  ],
+  [
+    "Stop [classic|retail]",
+    "\nDescription: Stop Baneto operation.",
+    "undefinedfunction/nBANETO_Stop/n(/n)/n"
+  ],
+  [
+    "GetWorstEnemyInBg [classic|retail]",
+    "\nDescription: Get the favorable enemy in the battleground.",
+    "undefined--@return: string: The name of the favorable enemy./nfunction/nBANETO_GetWorstEnemyInBg/n(/n)/n"
+  ],
+  [
+    "GetBestFriendInBg [classic|retail]",
+    "\nDescription: Get the most favorable friend in the battleground.",
+    "undefined--@return: string: The name of the most favorable friend./nfunction/nBANETO_GetBestFriendInBg/n(/n)/n"
+  ],
+  [
+    "IsLastProfileBattleground [classic|retail]",
+    "\nDescription: Check if the last loaded profile was for a battleground.",
+    "undefined--@return: boolean: Returns true if the last profile was for a battleground, false otherwise./nfunction/nBANETO_IsLastProfileBattleground/n(/n)/n"
+  ],
+  [
+    "IsLastProfileDungeon [classic|retail]",
+    "\nDescription: Check if the last loaded profile was for a dungeon.",
+    "undefined--@return: boolean: Returns true if the last profile was for a dungeon, false otherwise./nfunction/nBANETO_IsLastProfileDungeon/n(/n)/n"
+  ],
+  [
+    "IsLastProfileQuesting [classic|retail]",
+    "\nDescription: Check if the last loaded profile was for questing.",
+    "undefined--@return: boolean: Returns true if the last profile was for questing, false otherwise./nfunction/nBANETO_IsLastProfileQuesting/n(/n)/n"
+  ],
+  [
+    "IsLastProfileEternal [classic|retail]",
+    "\nDescription: Check if the last loaded profile was for an eternal event.",
+    "undefined--@return: boolean: Returns true if the last profile was for an eternal event, false otherwise./nfunction/nBANETO_IsLastProfileEternal/n(/n)/n"
+  ],
+  [
+    "IsLastProfileGathering [classic|retail]",
+    "\nDescription: Check if the last loaded profile was for gathering.",
+    "undefined--@return: boolean: Returns true if the last profile was for gathering, false otherwise./nfunction/nBANETO_IsLastProfileGathering/n(/n)/n"
+  ],
+  [
+    "IsLastProfileTraveling [classic|retail]",
+    "\nDescription: Check if the last loaded profile was for traveling.",
+    "undefined--@return: boolean: Returns true if the last profile was for traveling, false otherwise./nfunction/nBANETO_IsLastProfileTraveling/n(/n)/n"
+  ],
+  [
+    "IsLastProfileGold [classic|retail]",
+    "\nDescription: Check if the last loaded profile was for gold farming.",
+    "undefined--@return: boolean: Returns true if the last profile was for gold farming, false otherwise./nfunction/nBANETO_IsLastProfileGold/n(/n)/n"
+  ],
+  [
+    "GetLastProfile [classic|retail]",
+    "\nDescription: Get the last loaded profile.",
+    "undefined--@return: string: The name of the last loaded profile./nfunction/nBANETO_GetLastProfile/n(/n)/n"
+  ],
+  [
+    "ReloadLastProfile [classic|retail]",
+    "\nDescription: Reload the last loaded profile.",
+    "undefinedfunction/nBANETO_ReloadLastProfile/n(/n)/n"
+  ],
+  [
+    "ReloadAndStartLastProfile [classic|retail]",
+    "\nDescription: Reload and start the last loaded profile.",
+    "undefinedfunction/nBANETO_ReloadAndStartLastProfile/n(/n)/n"
+  ],
+  [
+    "Customer [classic|retail]",
+    "\nDescription: Return the Baneto username.",
+    "undefined--@return: string: The username of the Baneto customer./nfunction/nBANETO_Customer/n(/n)/n"
+  ],
+  [
+    "AddItemToNeverSell [classic|retail]",
+    "\nDescription: Add an item to the list that should never be sold.",
+    "undefined--@arg itemname: string: The name of the item to be added./nfunction/nBANETO_AddItemToNeverSell/n(/n)/n"
+  ],
+  [
+    "IsItemInUsageList [classic|retail]",
+    "\nDescription: Check if the specified item is in the usage list.",
+    "undefined--@arg itemname: string: The name of the item./n--@return: boolean: Returns true if the item is in the usage list, false otherwise./nfunction/nBANETO_IsItemInUsageList/n(/n)/n"
+  ],
+  [
+    "RemoveItemFromUsageList [classic|retail]",
+    "\nDescription: Remove an item from the usage list.",
+    "undefined--@arg itemname: string: The name of the item to be removed./nfunction/nBANETO_RemoveItemFromUsageList/n(/n)/n"
+  ],
+  [
+    "VisualizeUsageList [classic|retail]",
+    "\nDescription: Display the items in the usage list.",
+    "undefinedfunction/nBANETO_VisualizeUsageList/n(/n)/n"
+  ],
+  [
+    "AddItemToUsageList [classic|retail]",
+    "\nDescription: Add an item to the usage list.",
+    "undefined--@arg itemname: string: The name of the item to be added./nfunction/nBANETO_AddItemToUsageList/n(/n)/n"
+  ],
+  [
+    "AddItemToDeleteList [classic|retail]",
+    "\nDescription: Add an item to the list that should automatically be deleted.",
+    "undefined--@arg itemname: string: The name of the item to be added./nfunction/nBANETO_AddItemToDeleteList/n(/n)/n"
+  ],
+  [
+    "AddItemToNeverDisenchant [classic|retail]",
+    "\nDescription: Add an item to the list that should never be disenchanted.",
+    "undefined--@arg itemname: string: The name of the item to be added./nfunction/nBANETO_AddItemToNeverDisenchant/n(/n)/n"
+  ],
+  [
+    "AddItemToAlwaysMail [classic|retail]",
+    "\nDescription: Add an item to the list that should always be mailed.",
+    "undefined--@arg itemname: string/nfunction/nBANETO_AddItemToAlwaysMail/n(/n)/n"
+  ],
+  [
+    "AddItemToNeverMail [classic|retail]",
+    "\nDescription: Add an item to the list that should never be mailed.",
+    "undefined--@arg itemname: string/nfunction/nBANETO_AddItemToNeverMail/n(/n)/n"
+  ],
+  [
+    "IsEntryInGlobalBlacklist [classic|retail]",
+    "\nDescription: Checks whether an ID is in the global blacklist from the user's blacklist tab.",
+    "undefined--@arg id: <value>/n--@return: boolean/nfunction/nBANETO_IsEntryInGlobalBlacklist/n(/n)/n"
+  ],
+  [
+    "RemoveItemFromNeverSell [classic|retail]",
+    "\nDescription: Remove an item from the list that should never be sold.",
+    "undefined--@arg itemname: string/nfunction/nBANETO_RemoveItemFromNeverSell/n(/n)/n"
+  ],
+  [
+    "RemoveItemFromDeleteList [classic|retail]",
+    "\nDescription: Remove an item from the list that should be deleted.",
+    "undefined--@arg itemname: string/nfunction/nBANETO_RemoveItemFromDeleteList/n(/n)/n"
+  ],
+  [
+    "RemoveItemFromNeverDisenchant [classic|retail]",
+    "\nDescription: Remove an item from the list that should never be disenchanted.",
+    "undefined--@arg itemname: string/nfunction/nBANETO_RemoveItemFromNeverDisenchant/n(/n)/n"
+  ],
+  [
+    "IsEntryInGlobalObjectlist [classic|retail]",
+    "\nDescription: Check if an entry exists in the global object list.",
+    "undefined--@arg id: number: The ID of the entry to be checked./n--@return: boolean: Returns true if the entry exists in the global object list, false otherwise./nfunction/nBANETO_IsEntryInGlobalObjectlist/n(/n)/n"
+  ],
+  [
+    "VisualizeGlobalObjectList [classic|retail]",
+    "\nDescription: Display the global object list.",
+    "undefinedfunction/nBANETO_VisualizeGlobalObjectList/n(/n)/n"
+  ],
+  [
+    "RemoveCustomObjectIDGlobal [classic|retail]",
+    "\nDescription: Remove a custom object ID from the global list.",
+    "undefined--@arg id: number: The ID of the object to be removed./nfunction/nBANETO_RemoveCustomObjectIDGlobal/n(/n)/n"
+  ],
+  [
+    "DefineCustomObjectIDGlobal [classic|retail]",
+    "\nDescription: Add a custom object ID to the global list.",
+    "undefined--@arg id: number: The ID of the object to be added./nfunction/nBANETO_DefineCustomObjectIDGlobal/n(/n)/n"
+  ],
+  [
+    "RemoveEntryFromGlobalMobIdBlacklist [classic|retail]",
+    "\nDescription: Remove an entry from the global mob ID blocklist.",
+    "undefined--@arg id: number: The ID of the mob to be removed from the blocklist./nfunction/nBANETO_RemoveEntryFromGlobalMobIdBlacklist/n(/n)/n"
+  ],
+  [
+    "RemoveItemFromNeverMail [classic|retail]",
+    "\nDescription: Remove an item from the list that should never be mailed.",
+    "undefined--@arg itemname: string: The name of the item to be removed./nfunction/nBANETO_RemoveItemFromNeverMail/n(/n)/n"
+  ],
+  [
+    "RemoveItemFromAlwaysMail [classic|retail]",
+    "\nDescription: Remove an item from the list that should always be mailed.",
+    "undefined--@arg itemname: string: The name of the item to be removed./nfunction/nBANETO_RemoveItemFromAlwaysMail/n(/n)/n"
+  ],
+  [
+    "ClearUserList [classic|retail]",
+    "\nDescription: Clear a user list.",
+    "undefined--@arg listname: string: The name of the list to be cleared./n--@arg force: boolean: Whether to force clear the list./nfunction/nBANETO_ClearUserList/n(/n,/n)/n"
+  ],
+  [
+    "VisualizeGlobalMobIdBlacklist [classic|retail]",
+    "\nDescription: Display the global mob ID blacklist.",
+    "undefinedfunction/nBANETO_VisualizeGlobalMobIdBlacklist/n(/n)/n"
+  ],
+  [
+    "VisualizeDoNotSellList [classic|retail]",
+    "\nDescription: Display the \"Do Not Sell\" list.",
+    "undefinedfunction/nBANETO_VisualizeDoNotSellList/n(/n)/n"
+  ],
+  [
+    "VisualizeDeleteList [classic|retail]",
+    "\nDescription: Display the delete list.",
+    "undefinedfunction/nBANETO_VisualizeDeleteList/n(/n)/n"
+  ],
+  [
+    "VisualizeDoNotDisenchantList [classic|retail]",
+    "\nDescription: Display the \"Do Not Disenchant\" list.",
+    "undefinedfunction/nBANETO_VisualizeDoNotDisenchantList/n(/n)/n"
+  ],
+  [
+    "VisualizeDoNotMailList [classic|retail]",
+    "\nDescription: Display the \"Do Not Mail\" list.",
+    "undefinedfunction/nBANETO_VisualizeDoNotMailList/n(/n)/n"
+  ],
+  [
+    "VisualizeAlwaysMailList [classic|retail]",
+    "\nDescription: Display the \"Always Mail\" list.",
+    "undefinedfunction/nBANETO_VisualizeAlwaysMailList/n(/n)/n"
+  ],
+  [
+    "SpellbookDebug [classic|retail]",
+    "\nDescription: Output debugging information for the spellbook.",
+    "undefinedfunction/nBANETO_SpellbookDebug/n(/n)/n"
+  ],
+  [
+    "CastSpellOnGround [classic|retail]",
+    "\nDescription: Cast a spell on the ground near a specified unit.",
+    "undefined--@arg spellid: number: The ID of the spell to be cast./n--@arg unit: unit: The unit near which to cast the spell./nfunction/nBANETO_CastSpellOnGround/n(/n,/n)/n"
+  ],
+  [
+    "IsSpellKnown [classic|retail]",
+    "\nDescription: Check if a spell is known by the character.",
+    "undefined--@arg spellid: number: The ID of the spell to be checked./n--@return: boolean: Returns true if the spell is known, false otherwise./nfunction/nBANETO_IsSpellKnown/n(/n)/n"
+  ],
+  [
+    "IsSpellUsable [classic|retail]",
+    "\nDescription: Check if a spell is usable.",
+    "undefined--@arg spellid: number: The ID of the spell to be checked./n--@return: boolean: Returns true if the spell is usable, false otherwise./nfunction/nBANETO_IsSpellUsable/n(/n)/n"
+  ],
+  [
+    "IsPlayerRooted [classic|retail]",
+    "\nDescription: Checks if the player is rooted or unable to move",
+    "undefined--@return: boolean/nfunction/nBANETO_IsPlayerRooted/n(/n)/n"
+  ],
+  [
+    "NumAvailableRunesDk [classic|retail]",
+    "\nDescription: Returns the number of available runes of a specific type for a Death Knight",
+    "undefined--@arg runeType: string/n--@return: number/nfunction/nBANETO_NumAvailableRunesDk/n(/n)/n"
+  ],
+  [
+    "GetCombatRange [classic|retail]",
+    "\nDescription: Returns the combat range of the player",
+    "undefined--@return: number/nfunction/nBANETO_GetCombatRange/n(/n)/n"
+  ],
+  [
+    "ClearGuidBlacklist [classic|retail]",
+    "\nDescription: Clears the GUID blacklist",
+    "undefinedfunction/nBANETO_ClearGuidBlacklist/n(/n)/n"
+  ],
+  [
+    "ClearGuidEngagedlist [classic|retail]",
+    "\nDescription: Clears the GUID engaged list",
+    "undefinedfunction/nBANETO_ClearGuidEngagedlist/n(/n)/n"
+  ],
+  [
+    "AddMobToGuidBlacklist [classic|retail]",
+    "\nDescription: Adds the specified unit to the GUID blacklist",
+    "undefined--@arg unit: string/nfunction/nBANETO_AddMobToGuidBlacklist/n(/n)/n"
+  ],
+  [
+    "AddMobToPolymorphList [classic|retail]",
+    "\nDescription: Adds the specified unit to the list of mobs to be polymorphed",
+    "undefined--@arg unit: string/nfunction/nBANETO_AddMobToPolymorphList/n(/n)/n"
+  ],
+  [
+    "AddMobToPriestPainedList [classic|retail]",
+    "\nDescription: Adds the specified unit to a list of pained units for a priest",
+    "undefined--@arg unit: string/nfunction/nBANETO_AddMobToPriestPainedList/n(/n)/n"
+  ],
+]
